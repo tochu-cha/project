@@ -8,5 +8,4 @@ Class WhatIsGit
       	  puts 'If you understand the basis, Git is easy'
       end
 
-
 end
