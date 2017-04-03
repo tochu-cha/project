@@ -1,3 +1,7 @@
+# -*- coding: undecided -*-
+require 'jcode'
+$KCODE = 'u'
+
 class WhatIsGit
 
       def about(lang = 'en')
@@ -16,7 +20,7 @@ class WhatIsGit
       private
         def input(message)
           puts message
-          gets.chomp.downcase
+          gets.chomp.tr('Ａ-Ｚａ-ｚ', 'A-Za-z').downcase
         end
 
 end
