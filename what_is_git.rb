@@ -20,7 +20,7 @@ class WhatIsGit
         end
 
 	def language
-	 ENV['$LANG'][0..1]
+	 ENV['$LANG'][0..1] || 'en'
 	end
 
 end
