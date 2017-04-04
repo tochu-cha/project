@@ -22,4 +22,7 @@ class WhatIsGit
           gets.chomp.downcase
         end
 
+	def language
+	end
+
 end
