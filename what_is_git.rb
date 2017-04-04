@@ -1,9 +1,6 @@
 class WhatIsGit
 
-      def about(lang = nil)
-	if lang==nil then
-	  lang = language
-	end
+      def about(lang = language)
         puts "http://*{lang}.wikipedia.org/wiki/Git"
       end
 
@@ -23,6 +20,7 @@ class WhatIsGit
         end
 
 	def language
+	 ENV['$LANG'][0..1]
 	end
 
 end
